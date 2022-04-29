@@ -1,0 +1,5 @@
+##Vou por só o comando que eu usei.
+
+Sudo adduser --uid 8989 tumaekk
+
+sudo adduser --home /home/etc aoskd
