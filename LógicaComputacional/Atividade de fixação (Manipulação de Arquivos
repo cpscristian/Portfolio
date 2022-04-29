@@ -1,0 +1,26 @@
+$ history
+  1   cd ..
+  2   mkdir Musica
+  3   cd Musica
+  4   mkdir MPB Pop Rock Sertanejo
+  5   cd Rock
+  6   echo "If i lose it all, slip and fall, i will never look away" > The Rumbling
+  7   cd ..
+  8   cd Pop
+  9   echo "I told you i change, even though i knew i never could" > Stay
+ 10   cd ..
+ 11   cd MPB
+ 12   echo "Esse cara sou eu" > Esse Cara Sou Eu
+ 13   cd ..
+ 14   cd Sertanejo
+ 15   echo "E quando eu toco esse swing, é pra ninguém ficar parado" > Fazer Beber
+ 16   cd ..
+ 17   cd rock
+ 18   ls -l
+ 19   cd ..
+ 20   mkdir todas_as_musicas
+ 21   cp Rock/"The Rumbling" todas_as_musicas
+ 22   cp Pop/"Stay" todas_as_musicas
+ 23   cp MPB/"Esse Cara Sou Eu" todas_as_musicas
+ 24   cp Sertanejo/"Fazer Beber" todas_as_musicas
+ 25   history
