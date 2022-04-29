@@ -1,0 +1,17 @@
+sudo addgroup superheroi
+sudo adduser haranha superheroi ##(deu erro)
+sudo adduser haranha superheroi ##(deu erro)
+sudo adduser haranha --ingroup superheroi
+sudo addgroup aracnídeos ##(deu erro)
+sudo addgroup aracnideos
+sudo adduser haranha aracnideos
+su haranha
+touch arquivo1 ##(deu erro)
+sudo touch arquivo1 ##(deu erro)
+touch arquivo 1 ##(deu erro)
+cd ~
+touch arquivo1
+touch arquivo2
+mkdir diretorio1
+mkdir diretorio2
+ls -l
