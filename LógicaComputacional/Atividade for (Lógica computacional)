@@ -5,7 +5,7 @@ public class Main
       Scanner alberto = new Scanner(System.in);
       int n = alberto.nextInt();
       for(int i = 1;i<n;i++){
-          int d = o;
+          int d = 0;
       for(int j = i;j>0;j--){
               if(i % j == 0){
                   d++;
