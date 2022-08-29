@@ -1,0 +1,82 @@
+package revisao;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Revisao {
+
+    
+    public static void main(String[] args) {
+        System.out.println(volPrisma());
+        System.out.println(altfacePrisma());
+        System.out.println(altPrisma());
+        System.out.println(areaTotalPrisma());
+        System.out.println(areaDaBase());
+        System.out.println(numeroDeFaces());
+        System.out.println(areaDaFace());
+    }
+    public static double volPrisma(){
+        Scanner input = new Scanner(System.in);
+                System.out.println("Digite a área da base:");
+                double ab = input.nextDouble();
+                System.out.println("Digite a altura:");
+                double h = input.nextDouble();
+                return ab*h;
+    }
+    public static double altPrisma(){
+        Scanner input = new Scanner(System.in);
+            System.out.println("Digite a área da base:");
+            double ab = input.nextDouble();
+            System.out.println("Digite o volume");
+            double v = input.nextDouble();
+            return v/ab;
+    }
+    public static double altfacePrisma(){
+        Scanner input = new Scanner(System.in);
+                System.out.println("Digite a altura:");
+                double h = input.nextDouble();
+                System.out.println("Digite o volume:");
+                double v = input.nextDouble();
+                return v/h;
+    }
+    public static double areaTotalPrisma(){
+        Scanner input = new Scanner(System.in);
+                System.out.println("Digite a área da base");
+                double ab = input.nextDouble();
+                System.out.println("Digite o número de faces");
+                double n = input.nextDouble();
+                System.out.println("Digite a área da face");
+                double f = input.nextDouble();
+                return 2*ab+n*f;
+    }
+    public static double areaDaBase(){
+        Scanner input = new Scanner(System.in);
+            System.out.println("Digite a área total");
+            double at = input.nextDouble();
+            System.out.println("Digite o número de faces");
+            double n = input.nextDouble();
+            System.out.println("Digite a área da face");
+            double f = input.nextDouble();
+            return (at-n*f)/2;
+    }
+    public static double numeroDeFaces(){
+        Scanner input = new Scanner (System.in);
+            System.out.println("Digite a área da base");
+            double ab = input.nextDouble();
+            System.out.println("Digite a área da face");
+            double f = input.nextDouble();
+            System.out.println("Digite a área total");
+            double at = input.nextDouble();
+            return (at-2*ab)/f;
+    }
+    public static double areaDaFace(){
+        Scanner input = new Scanner (System.in);
+            System.out.println("Digite a área total");
+            double at = input.nextDouble();
+            System.out.println("Digite a área da base");
+            double ab = input.nextDouble();
+            System.out.println("Digite o número de faces");
+            double n = input.nextDouble();
+            return (at-2*ab)/n;
+    }
+}
