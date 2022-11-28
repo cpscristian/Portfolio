@@ -1,0 +1,14 @@
+CREATE TABLE Pessoa(
+  Nome VARCHAR(35) not null,
+  Idade int not null,
+  cpf VARCHAR(14) not null,
+  PRIMARY KEY (cpf)
+  );
+CREATE TABLE Vendedor(
+  Nome VARCHAR(35) not null,
+  Idade int not null,
+  cpfVendedor VARCHAR(14) not null,
+  cpf VARCHAR(14) not null,
+  PRIMARY KEY (cpfVendedor),
+  FOREIGN KEY (cpf) REFERENCES Pessoa
+  );
