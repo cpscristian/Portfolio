@@ -1,0 +1,17 @@
+Create table Carro (
+  id_carro SERIAL,
+  janela_automatica BOOLEAN not null,
+  marca VARCHAR(20) not null,
+  cavalos int not null,
+  tipo VARCHAR(30) not null,
+  PRIMARY KEY(id_carro)
+)
+CREATE TABLE Motorista(
+  cpf VARCHAR(20) not null,
+  altura DECIMAL(3,2) not null,
+  nome VARCHAR(50) not null,
+  cart_motorista BOOLEAN not null,
+  id_carro_fk SERIAL,
+  PRIMARY KEY (cpf),
+  FOREIGN KEY (id_carro_fk) REFERENCES Carro(id_carro)
+)
